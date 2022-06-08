@@ -1,0 +1,32 @@
+<div class="card">
+    <h4 class="card-header"> Add PTL :</h4>
+    <div class="card-body">
+        <form [formGroup]="userForm" (ngSubmit)="handelSubmit()">
+            <label>
+                Prenom :
+                <input type="text" formControlName="prenom" class="form-control">
+            </label>
+            <br>
+            <label>
+                Nom :
+                <input type="text" formControlName="nom" class="form-control">
+            </label>
+            <br>
+            <label>
+                Email :
+                <input type="text" formControlName="email" class="form-control">
+            </label>
+            <br>
+            <label>
+                Password :
+                <input type="password" formControlName="password" class="form-control">
+            </label>
+            <br>
+            <br>
+
+            <input type="submit" value="Add" class="btn btn-primary">
+            <br>
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="main-menu">
+  <ul>
+    <a href="/home"><li class="menu-item"><i class="fa fa-home"></i> Accueil</li></a>
+    <a href="/consultation-ptl"><li class="menu-item"><i class="fa fa-server"></i>Template Test</li></a>
+    <a href="/technologie"><li class="menu-item"><i class="fa fa-laptop"></i>Technologie</li></a>
+    <a href="/questions-dash"><li class="menu-item" *ngIf="!isPtl()"><i class="fa fa-question" id="qst"></i>Questions</li></a>
+    <a href="/recruteur"><li class="menu-item" *ngIf="!isPtl()"><i class="fa fa-user"></i> Recruteurs</li></a>
+    <a href="/ptl"><li class="menu-item"  *ngIf="!isPtl()"><i class="fa fa-user"></i>PTLS</li></a>
+  
+    
+
+    <!-- <button (click)="logout()">
+      <i class="fa fa-trash-o" aria-hidden="true"></i>
+    </button> -->
+
+    <a id="out" [routerLink]="['/login']"  (click)="logout()" id="out" *ngIf="userlogged()"><li class="menu-item" ><i class="fa fa-sign-in"></i>Out</li></a>
+    
+
+
+  </ul>
+
+</div>

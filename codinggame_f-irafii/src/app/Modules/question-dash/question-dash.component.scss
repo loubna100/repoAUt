@@ -1,0 +1,48 @@
+#btn{
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 83px;
+    background-color: #0070AD;
+}
+table{
+    border-color: #0070AD;
+    border-collapse: separate;
+    border: 3px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: #0070AD;
+}
+.table-bordered>:not(caption)>*>*{
+    border-width: 0px 0px 0px;
+}
+i{
+    font-size: 20px;
+}
+.fa-pencil{
+    color: #0070AD;
+}
+.fa-trash-o{
+    color: red;
+}
+.btn{
+    margin: 20px 0px;
+    float: right;
+}
+#input-search{
+    width: 400px;
+    margin: 20px -181px;
+    float: right;
+    border: 3px solid;
+    border-color: #0070AD;
+    border-radius: 10px;
+    padding: 5px;
+}
+.fa-plus{
+    position: relative;
+    top: 3px;
+    right: 4px;
+    
+}

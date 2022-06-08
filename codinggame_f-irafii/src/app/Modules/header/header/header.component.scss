@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@100&display=swap');
+
+*,body{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background-color: #ebebeb;
+  font-family: 'Fira Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#out{
+  position: relative;
+  top: 50px;
+}
+.main-menu{
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width:10px;
+  height: 40vh;
+
+  //background-color: #ffff;
+  background-color: #0070ad63;
+  border-top-right-radius: 10px ;
+  border-bottom-right-radius:10px ;
+  overflow: hidden;
+  white-space: nowrap;
+  //box-shadow: 0px 0px 20px #90ceef;
+
+  transition: .6s ease;
+}
+.main-menu:hover{
+  width: 200px;
+  overflow-y: scroll;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: #ffff;
+
+
+
+}
+
+.main-menu .menu-item{
+  padding: 15px;
+}
+.main-menu .menu-item:hover{
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+.main-menu .menu-item .fa{
+  font-size: 25px;
+  width: 50px;
+  padding: 10px;
+  color: gray;
+  position: relative;
+  top: 4px;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb{
+  background: #bbbbbb;
+  border-radius: 10px;
+}
+
+.main-menu .menu-item:hover .fa{
+  color: #12ABDB;
+}
+a:hover{
+  color: #0070AD;
+}
+#out{
+  position: relative;
+  top: 80px;;
+}
+

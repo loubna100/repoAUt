@@ -1,0 +1,66 @@
+.container0{
+    background-image: url("../../../../assets/images/home_test_bg.PNG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    padding: 60px 0 205px 0;
+
+    &>img{
+        margin-top: -45px;
+    }
+}
+.clearfix{
+    clear: both;
+}
+h1{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+
+    &::first-letter{
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 60px;
+        color: #12ABDB;
+    }
+    &+hr{
+        width: 60%;
+        color: #0070AD;
+    }
+    &+hr+span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #0070AD;
+    }
+}
+.bluecap{
+    background: #0070AD;
+}
+.record{
+    max-width: 45px;
+}
+.home_img{
+    max-width: 317px;
+}
+.bg-w{
+    position: relative;
+    background-color:rgba(#12ABDB,41%);
+    border-radius: 20px;
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 46px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+    }
+    img:first-of-type{
+        top: -50px;
+        max-width: 100px;
+    }
+}

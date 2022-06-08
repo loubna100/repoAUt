@@ -1,0 +1,79 @@
+<div class="container0 h-100">
+  <div class="d-flex justify-content-center h-100">
+    <div class="user_card">
+      <div class="d-flex justify-content-center">
+        <div class="brand_logo_container">
+          <img src="./assets/images/user.png" alt="Logo">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center form_container">
+        <form name="form" (ngSubmit)="f.form.valid && login(f.value)" #f="ngForm" novalidate>
+          <div class="input-group mb-2">
+            <div class="input-group-append">
+              <span class="input-group-text bluecap"><img src="./assets/images/email.png" alt=""></span>
+            </div>
+            <input type="email" name="email" pattern="^[\w-\.]+@capgemini.com+$"
+                   class="form-control" value="" placeholder="Email" [(ngModel)]="model.email"
+                   #email="ngModel" required>
+
+          </div>
+          <div class="mb-3" *ngIf="!email?.valid && (email?.dirty && email?.touched)">
+            <div class="small text-danger" *ngIf="email?.errors?.required">
+              <li>Email requis</li>
+            </div>
+            <div class="small text-danger" *ngIf="email?.errors?.pattern">
+              <!-- <li>L'email doit être sous la forme : xxx@capgemini.com</li>  -->
+              <li>Exemple d'email : xxx@capgemini.com</li>
+            </div>
+
+
+          </div>
+          <div class="input-group mb-2">
+            <div class="input-group-append">
+              <span class="input-group-text bluecap"><img class="key" src="./assets/images/key.png" alt=""></span>
+            </div>
+            <input type="password" name="password"
+                   pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+                   class="form-control" value="" placeholder="Mot de passe"
+                   [(ngModel)]="model.password" #password="ngModel" required>
+          </div>
+          <div *ngIf="!password?.valid && (password?.dirty && password?.touched)">
+            <div class="small text-danger" *ngIf="password?.errors?.required">
+              <li>Mot de passe requis</li>
+            </div>
+            <div class="small text-danger" *ngIf="password?.errors?.pattern">
+              <!-- <p> Mot de passe doit être sous forme de chaine de
+              caractère mixte entre des lettres majuscules et minuscules
+               des chiffres et des caractère spéciales</p> -->
+              <li>lettres majuscules et minuscules</li>
+              <li>chiffres et des caractere speciaux</li>
+
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="form-check-input" id="customControlInline" style="margin-right: 5px;">
+              <label class="custom-control-label" for="customControlInline">  Souviens de moi</label>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3 login_container">
+            <button type="submit" name="button" class="btn login_btn bluecap" >
+              Se connecter</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="mt-4">
+        <div class="d-flex justify-content-center links">
+          <a href="#">Mot de passe oublié?</a>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center links">
+          Vous n'avez pas de compte ? <a href="#" class="ml-2" style="margin-left: 5px;">S'inscrire</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
